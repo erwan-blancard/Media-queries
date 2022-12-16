@@ -1,32 +1,40 @@
 /* main */
 
 .mainimg{
-    margin-left: 150px;
+    width: 100%;
+    height: 360px;
+    text-align: center;
 }
 
 .title{
-    margin-left: 850px;
-    font-size: 150%;
-    margin-top: 50px;
-    font-family: 'MetropolitanoRegular';
+    padding: 2em 5em;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
 }
 
 .en-vau,.sugiton,.callelongue,.marseilleveyre,.morgiou,.sormiou{
+    width: 90%;
     display: flex;
-    margin-top: 90px;
-    margin-left: 300px;
-    width: 1000px;
     justify-content: center;
-    font-family: 'MetropolitanoRegular';
     background-color: whitesmoke;
     transition-property: background-color;
-    transition-duration: 2s;
-    height: 300px;
+    transition-duration: 1s;
+    margin-bottom: 3em;
+}
+
+.img1,.img2,.img3,.img4,.img5,.img6 {
+    align-self: center;
 }
 
 .text1,.text2,.text3,.text4,.text5,.text6{
     justify-content: flex-end;
-    margin-left: 20px;
+    padding: 1em;
 }
 
 .en-vau:hover,.sugiton:hover,.morgiou:hover,.sormiou:hover,.callelongue:hover,.marseilleveyre:hover{
@@ -34,3 +42,30 @@
 }
 
 /* fin main */
+
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (max-device-width: 820px) {
+    .mainimg{
+        height: 256px;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-device-width: 480px) {
+    .mainimg{
+        display: none;
+    }
+
+    .img1,.img2,.img3,.img4,.img5,.img6 {
+        align-self: center;
+    }
+
+    .en-vau,.sugiton,.callelongue,.marseilleveyre,.morgiou,.sormiou {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .flex-list {
+        gap: 2em;
+    }
+}
