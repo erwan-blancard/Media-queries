@@ -4,7 +4,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2em;
     align-items: center;
     justify-content: center;
 }
@@ -21,7 +21,7 @@ h1 {
     background-color: #88c1d0;
     border-radius: 16px;
     box-shadow: 4px 4px 4px grey;
-    margin-bottom: 40px;
+    margin-bottom: 3em;
 }
 
 .submit_button {
@@ -34,7 +34,7 @@ h1 {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:18px;
+	font-size:1.3em;
 	font-weight:bold;
 	padding:9px 23px;
 	text-decoration:none;
@@ -47,4 +47,44 @@ h1 {
 .submit_button:active {
 	position:relative;
 	top:1px;
+}
+
+textarea {
+	width: 80%;
+}
+
+.message-label {
+	display: inline;
+}
+
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (max-device-width: 820px) {
+	.form {
+		width: 80vw;
+		text-align: center;
+		background-color: #88c1d0;
+		border-radius: 16px;
+		box-shadow: 4px 4px 4px grey;
+		margin-bottom: 3em;
+	}
+
+	.message-label {
+		display: none;
+	}
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-device-width: 480px) {
+	.form {
+		width: 90vw;
+		text-align: center;
+		background-color: #88c1d0;
+		border-radius: 16px;
+		box-shadow: 4px 4px 4px grey;
+		margin-bottom: 3em;
+	}
+
+	.message-label {
+		display: none;
+	}
 }
