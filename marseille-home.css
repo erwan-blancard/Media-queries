@@ -110,10 +110,10 @@ main {
 	background-repeat: no-repeat;
 }
 
-/* MEDIA QUERIES FOR TABLET VIEW */
+/* MEDIA QUERIES FOR TABLET VIEW 810px 1080px */
 @media all and (max-device-width: 820px) {
 	section {
-		width: 90vw;
+		width: 70vw;
 		border-radius: 0.4em;
 	}
 
@@ -134,7 +134,7 @@ main {
 	}
 }
 
-/* MEDIA QUERIES FOR MOBILE VIEW */
+/* MEDIA QUERIES FOR MOBILE VIEW 320px 480px */
 @media all and (max-device-width: 480px) {
 	section {
 		margin-bottom: 2em;

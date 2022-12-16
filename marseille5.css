@@ -1,36 +1,40 @@
-.test{
+.flex-list{
+    margin: 2em;
     display: flex;
     flex-direction: column;
+    gap: 3em;
+    align-items: center;
     justify-content: center;
 }
 
 .order1,.order2,.order3,.order4,.order5,.order6{
-    margin-top: 20px;
+    width: 80%;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
     display:flex;
+    gap: 3em;
     background-color: rgb(226, 225, 225);
     justify-content: center;
-    margin-left: 200px;
-    margin-right: 200px;
     transition-property: background-color;
-    transition-duration: 2s;
-    height: 500px;
+    transition-duration: 1s;
 }
 
 .order1:hover,.order2:hover,.order3:hover,.order4:hover,.order5:hover,.order6:hover{
-    background-color: grey;
+    background-color: rgb(200, 200, 200);
 }
-.mucemti,.mhti,.mhnti,.mbati,.mamti,.mmti{
-    margin-left: 50px;
-}
-
-
-.mucemte,.mhte,.mhnte,.mbate,.mamte,.mmte{
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-right: 20px;
+.mucemti,.mhti,.mhnti,.mbati,.mamti,.mmti{  /* titres scetion */
+    
 }
 
+.mucemte,.mhte,.mhnte,.mbate,.mamte,.mmte{  /* texte section */
+    
+}
+
+.image {
+    width: 30vw;
+    border-radius: 10px;
+}
 
 .titre{
     margin-left: 90px;
@@ -38,9 +42,10 @@
 
 section.top-page{
     background: url("assets/museum/mucem.gif");
-    background-size: cover;
-    height: 80vh;
-    padding: 25px;
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    padding: 1.6em;
     background-color: whitesmoke;
 }
 
@@ -48,11 +53,105 @@ section.top-page{
     margin-top: 50px;
 }
 
+.osef img {
+    background-color: white;
+    border-radius: 10px;
+}
+
 .big-title{
     background-color: white; 
     border-radius: 10px; 
-    padding-left: 50px; 
-    width: 700px;
+    padding-left: 0.8em;
+    width: 8.8em;
     font-size: 60px;
     margin-top: 300px;
+}
+
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (max-device-width: 820px) {
+    .titre{
+        margin-left: 0px;
+        text-align: center;
+    }
+    section.top-page{
+        background: url("assets/museum/mucem.gif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 1.6em;
+        background-color: whitesmoke;
+    }
+    
+    .osef{
+        margin-top: 50px;
+    }
+    
+    .osef img {
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .big-title{
+        background-color: white; 
+        border-radius: 10px; 
+        padding-left: 0.8em;
+        width: 8.8em;
+        font-size: 60px;
+        margin-top: 200px;
+    }
+
+    .order1,.order2,.order3,.order4,.order5,.order6{
+        width: 80%;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+        display:flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: rgb(226, 225, 225);
+        justify-content: center;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-device-width: 480px) {
+    .titre{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .osef{
+        margin-top: 3em;
+    }
+    
+    .osef img {
+        width: 60%;
+    }
+    
+    .big-title{
+        padding-left: 0.8em;
+        width: 8.8em;
+        font-size: 2em;
+        margin-top: 96px;
+    }
+
+    .order1,.order2,.order3,.order4,.order5,.order6{
+        width: 80%;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 1em;
+        display:flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: rgb(226, 225, 225);
+        justify-content: center;
+    }
+
+    .image {
+        width: 100%;
+    }
 }
