@@ -23,13 +23,6 @@
 .order1:hover,.order2:hover,.order3:hover,.order4:hover,.order5:hover,.order6:hover{
     background-color: rgb(200, 200, 200);
 }
-.mucemti,.mhti,.mhnti,.mbati,.mamti,.mmti{  /* titres scetion */
-    
-}
-
-.mucemte,.mhte,.mhnte,.mbate,.mamte,.mmte{  /* texte section */
-    
-}
 
 .image {
     width: 30vw;
@@ -73,43 +66,19 @@ section.top-page{
         margin-left: 0px;
         text-align: center;
     }
-    section.top-page{
-        background: url("assets/museum/mucem.gif");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 1.6em;
-        background-color: whitesmoke;
-    }
     
     .osef{
-        margin-top: 50px;
-    }
-    
-    .osef img {
-        background-color: white;
-        border-radius: 10px;
+        margin-top: 2em;
     }
     
     .big-title{
-        background-color: white; 
-        border-radius: 10px; 
-        padding-left: 0.8em;
-        width: 8.8em;
-        font-size: 60px;
         margin-top: 200px;
     }
 
     .order1,.order2,.order3,.order4,.order5,.order6{
-        width: 80%;
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-bottom: 1em;
         display:flex;
         flex-direction: column;
         gap: 1em;
-        background-color: rgb(226, 225, 225);
-        justify-content: center;
     }
 
     .image {
@@ -133,22 +102,13 @@ section.top-page{
     }
     
     .big-title{
-        padding-left: 0.8em;
-        width: 8.8em;
-        font-size: 2em;
         margin-top: 96px;
     }
 
     .order1,.order2,.order3,.order4,.order5,.order6{
-        width: 80%;
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-bottom: 1em;
         display:flex;
         flex-direction: column;
         gap: 1em;
-        background-color: rgb(226, 225, 225);
-        justify-content: center;
     }
 
     .image {

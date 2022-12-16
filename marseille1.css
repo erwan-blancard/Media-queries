@@ -1,35 +1,57 @@
 .fond{
-    margin-left: 170px;
+    width: 100%;
+    height: 460px;
+    text-align: center;
 }
 
 .title{
     font-size: 90%;
-    margin-left: 70px;
-    margin-top: 20px;
+    padding: 2em 5em;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 2em;
 }
 
 .massalia,.cafe,.peste,.sardine,.canal,.om{
+    width: 80%;
+    padding: 1em;
     display: flex;
-    margin-right: 200px;
-    margin-left: 200px;
     background-color: rgb(243, 216, 181);
     transition-property: background-color;
     transition-duration: 2s;
-    margin-top: 50px;
 }
 
 .massalia:hover,.cafe:hover,.peste:hover,.sardine:hover,.canal:hover,.om:hover{
     background-color: burlywood;
 }
 .text{
-    margin-left: 10px;
-    margin-right: 200px;
+    margin-right: 2em;
 }
 
 .img{
-    margin-top: 10px;
-    margin-right: 10px;
+    align-self: center;
 }
 
+/* MEDIA QUERIES FOR TABLET VIEW */
+@media all and (max-device-width: 820px) {
+    .fond{
+        height: 280px;
+    }
+}
 
+/* MEDIA QUERIES FOR MOBILE VIEW */
+@media all and (max-device-width: 480px) {
+    .fond{
+        display: none;
+    }
+    .massalia,.cafe,.peste,.sardine,.canal,.om{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
